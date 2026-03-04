@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My GH Page</title>
+</head>
+<body>
+    <h1>
+        some text here !
+    </h1>
+    and the paragraph
+    
+</body>
+
+<!-- <!DOCTYPE html> -->
+<!-- <html lang="en"> -->
+<!-- <head> -->
+<!--     <meta charset="UTF-8"> -->
+<!--     <title>Two-Column Python Code</title> -->
+<!--     <style> -->
+<!--         .container { -->
+<!--             display: flex; -->
+<!--             width: 100%; -->
+<!--             height: 40vh; -->
+<!--         } -->
+<!--         .column { -->
+<!--             flex: 1; -->
+<!--             padding: 15px; -->
+<!--             overflow-y: auto; -->
+<!--         } -->
+<!--         .left-column { -->
+<!--             background-color: #f0f0f0; -->
+<!--         } -->
+<!--         .right-column { -->
+<!--             background-color: #e0e0e0; -->
+<!--         } -->
+<!--         .keyword { color: blue; font-weight: bold; } -->
+<!--         .string { color: green; } -->
+<!--         .comment { color: gray; font-style: italic; } -->
+<!--         .function { color: red; } -->
+<!--     </style> -->
+<!-- </head> -->
+<!-- <body> -->
+
+    <!-- <h2>Exec Misuse</h2> -->
+    <!-- I know that the __import__ mechanism uses "exec" but this is quite -->
+    <!-- confusing, especially if you have access only to "main.py" -->
+    <!-- <br> -->
+    <!-- <br> -->
+    <!-- why ? because "iris_data" was frequently used in different scripts and -->
+    <!-- this was the adopted solution to reduce code duplication -->
+    <!-- <br> -->
+    <!-- <br> -->
+    <!-- and multiply headaches -->
+    <!-- <div class="container"> -->
+
+<!--         <div class="column left-column"> -->
+<!--             <h3>main.py</h3> -->
+<!--             <pre><code> -->
+<!-- <span class="keyword">import</span> pandas <span class="keyword">as</span> pd -->
+
+
+<!-- <span class="keyword">exec</span>(<span class="function">open</span>(<span class="string">"path/to/my_module.py"</span>)) -->
+
+<!-- <span class="comment"># where does iris_data come from ?</span> -->
+<!-- result = pd.groupby(iris_data).agg(TOT_SL = (<span class="string">"sepal_length"</span>, <span class="string">"sum"</span>)) -->
+<!--             </code></pre> -->
+<!--         </div> -->
+
+<!--         <div class="column right-column"> -->
+<!--             <h3>my_module.py</h3> -->
+<!--             <pre><code> -->
+<!-- <span class="comment"># oh, here it is !</span> -->
+<!-- iris_data = pd.read_csv(<span class="string">"path/to/iris.csv"</span>) -->
+<!--             </code></pre> -->
+<!--         </div> -->
+
+    <!-- </div> -->
+
+
+    <!-- <h2>import Misuse</h2> -->
+    <!-- slight improvement on the previous version -->
+    <!-- <br> -->
+    <!-- <br> -->
+    <!-- I want to stress that every time you import the module, the code in it will -->
+    <!-- run and these are not light operations -->
+    <!-- <div class="container"> -->
+
+<!--         <div class="column left-column"> -->
+<!--             <h3>main.py</h3> -->
+<!--             <pre><code> -->
+<!-- <span class="keyword">import</span> pandas <span class="keyword">as</span> pd -->
+
+<!-- <span class="keyword">import</span> my_module -->
+
+
+<!-- result = ( -->
+<!--     pd -->
+<!--     <span class="comment"># still a bit confusing ...</span> -->
+<!--     .groupby(my_module.iris_data) -->
+<!--     .agg(TOT_SL = (<span class="string">"sepal_length"</span>, <span class="string">"sum"</span>)) -->
+<!-- ) -->
+<!--             </code></pre> -->
+<!--         </div> -->
+
+<!--         <div class="column right-column"> -->
+<!--             <h3>my_module.py</h3> -->
+<!--             <pre><code> -->
+<!-- iris_data = pd.read_csv(<span class="string">"path/to/iris.csv"</span>) -->
+<!--             </code></pre> -->
+<!--         </div> -->
+
+    <!-- </div> -->
+
+
+
+<!-- </body> -->
+
+<!-- </html> -->
+<!---->
+<!-- <!DOCTYPE html> -->
+<!-- <html lang="en"> -->
+<!-- <head> -->
+<!--     <meta charset="UTF-8"> -->
+<!--     <title>Two-Column Python Code</title> -->
+<!--     <style> -->
+<!--         .container { -->
+<!--             display: flex; -->
+<!--             width: 100%; -->
+<!--             height: 100vh; -->
+<!--         } -->
+<!--         .column { -->
+<!--             flex: 1; -->
+<!--             padding: 15px; -->
+<!--             overflow-y: auto; -->
+<!--         } -->
+<!--         .left-column { -->
+<!--             background-color: #f0f0f0; -->
+<!--         } -->
+<!--         .right-column { -->
+<!--             background-color: #e0e0e0; -->
+<!--         } -->
+<!--         .keyword { color: blue; font-weight: bold; } -->
+<!--         .string { color: green; } -->
+<!--         .comment { color: gray; font-style: italic; } -->
+<!--         .function { color: red; } -->
+<!--     </style> -->
+<!-- </head> -->
+<!-- <body> -->
+<!---->
+<!--     <h2>the single column section</h2> -->
+<!--     this is what happened -->
+<!---->
+<!--     <div class="container"> -->
+<!---->
+<!--         <div class="column left-column"> -->
+<!--             <!-- Add your first column content here --> -->
+<!---->
+<!--             <h2>my_module.py</h2> -->
+<!--             <p>the file containing stuff</p> -->
+<!---->
+<!--             <pre><code> -->
+<!-- <span class="keyword">def</span> <span class="function">example_function</span>(): -->
+<!--     <span class="comment"># This is a comment</span> -->
+<!--     <span class="keyword">print</span>(<span class="string">"Hello, World!"</span>) -->
+<!--             </code></pre> -->
+<!---->
+<!---->
+<!---->
+<!--         </div> -->
+<!---->
+<!--         <div class="column right-column"> -->
+<!--             <h2>main.py</h2> -->
+<!--             <p>the main file</p> -->
+<!---->
+<!--             <pre><code> -->
+<!-- <span class="keyword">from</span> my_module <span class="keyword">import</span> example_function -->
+<!---->
+<!---->
+<!-- <span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>: -->
+<!--     <span class="function">example_function</span>() -->
+<!--             </code></pre> -->
+<!--         </div> -->
+<!--     </div> -->
+<!-- </body> -->
+<!-- </html> -->
+<!---->
+<!-- <!DOCTYPE html> -->
+<!-- <html lang="en"> -->
+<!-- <head> -->
+<!--     <meta charset="UTF-8"> -->
+<!--     <title>Python Code Highlight</title> -->
+<!--     <style> -->
+<!--         .keyword { color: blue; font-weight: bold; } -->
+<!--         .string { color: green; } -->
+<!--         .comment { color: gray; font-style: italic; } -->
+<!--         .function { color: red; } -->
+<!--         pre { -->
+<!--             background-color: #f4f4f4; -->
+<!--             padding: 15px; -->
+<!--             border-radius: 5px; -->
+<!--             overflow-x: auto; -->
+<!--         } -->
+<!--     </style> -->
+<!-- </head> -->
+<!-- <body> -->
+<!--     some introduction text -->
+<!--     <pre> -->
+<!--     <h1> -->
+<!--     the first file -->
+<!--     </h1> -->
+<!--     <code> -->
+<!---->
+<!-- <span class="keyword">def</span> <span class="function">example_function</span>(): -->
+<!--     <span class="comment"># This is a comment</span> -->
+<!--     <span class="keyword">print</span>(<span class="string">"Hello, World!"</span>) -->
+<!---->
+<!-- <span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>: -->
+<!--     <span class="function">example_function</span>() -->
+<!---->
+<!--     </code> -->
+<!--     </pre> -->
+<!-- </body> -->
+<!-- </html> -->
