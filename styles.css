@@ -12,12 +12,10 @@ body {
     overflow-y: auto;
 }
 .left-column {
-    background-color: #90E3F5;
-    /* background-color: #f0f0f0; */
+    background-color: #f0f0f0;
 }
 .right-column {
-    background-color: #78C0CF;
-    /* background-color: #e0e0e0; */
+    background-color: #e0e0e0;
 }
 .keyword { color: blue; font-weight: bold; }
 .string { color: green; }
